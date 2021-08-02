@@ -25,7 +25,7 @@
         android:layout_width="184dp"
         android:layout_height="56dp"
         android:layout_marginBottom="188dp"
-        android:backgroundTint="#9CDF5858"
+        android:backgroundTint="#B7DF5858"
         android:text="Register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
