@@ -11,7 +11,7 @@
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bgimagesecond"
+        android:background="@drawable/tablegood"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,7 +30,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="clip_vertical|fill"
-                android:background="@drawable/bgimagesecond"
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +42,7 @@
                     android:layout_width="220dp"
                     android:layout_height="220dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="33dp"
                     android:src="@drawable/shiva3" />
 
                 <EditText
@@ -52,12 +51,15 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|center_vertical"
                     android:layout_marginTop="30dp"
+                    android:backgroundTint="#DFDADA"
                     android:ems="10"
                     android:fontFamily="@font/acme"
+                    android:foregroundTint="#FBE8E8"
                     android:gravity="center"
                     android:hint="Enter Email"
                     android:inputType="textEmailAddress"
-                    android:textColor="#302424" />
+                    android:textColor="#DCD4D4"
+                    android:textColorHint="#F6F0F0" />
 
                 <EditText
                     android:id="@+id/editTextNumberPassword"
@@ -65,12 +67,15 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|center_vertical"
                     android:layout_marginTop="30dp"
+                    android:backgroundTint="#EFDFDF"
                     android:ems="10"
                     android:fontFamily="@font/acme"
+                    android:foregroundTint="#E1CDCD"
                     android:gravity="center"
                     android:hint="Enter Password"
                     android:inputType="numberPassword"
-                    android:textColor="#302424" />
+                    android:textColor="#EFBCBC"
+                    android:textColorHint="#EFD8D8" />
 
                 <Button
                     android:id="@+id/button"
@@ -78,7 +83,7 @@
                     android:layout_height="52dp"
                     android:layout_gravity="center|center_vertical"
                     android:layout_marginTop="42dp"
-                    android:backgroundTint="#FF6E40"
+                    android:backgroundTint="#AF9C96"
                     android:fontFamily="monospace"
                     android:text="Login"
                     android:textColor="#8C1E1E"
@@ -91,7 +96,7 @@
                     android:layout_gravity="center|center_vertical"
                     android:layout_marginTop="29dp"
                     android:text="---------------OR----------------"
-                    android:textColor="#141015"
+                    android:textColor="#F3EFF4"
                     android:textStyle="bold" />
 
                 <TextView
@@ -102,11 +107,12 @@
                     android:fontFamily="@font/aldrich"
                     android:gravity="center"
                     android:text="Sign-in with"
+                    android:textColor="#D68D8D"
                     android:textSize="24sp" />
 
                 <LinearLayout
                     android:layout_width="318dp"
-                    android:layout_height="41dp"
+                    android:layout_height="44dp"
                     android:layout_gravity="center|center_vertical"
                     android:layout_marginTop="25dp"
                     android:orientation="horizontal">

@@ -4,33 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgimagesecond"
     tools:context=".SignupActivity">
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bgimagesecond"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        android:background="@drawable/loginblur">
 
-        <ScrollView
+        <LinearLayout
+            android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
 
             <LinearLayout
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="810dp"
                 android:layout_gravity="clip_vertical|fill"
-                android:background="@drawable/bgimagesecond"
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +43,7 @@
                     android:layout_width="96dp"
                     android:layout_height="96dp"
                     android:layout_gravity="center|center_vertical"
-                    android:layout_marginTop="36dp"
+                    android:layout_marginTop="42dp"
                     android:src="@drawable/profile"
                     app:civ_border_color="#220A0A"
                     app:civ_border_width="2dp"
@@ -57,7 +56,7 @@
                     android:layout_marginTop="11dp"
                     android:fontFamily="@font/aldrich"
                     android:text="Upload Photo"
-                    android:textColor="#B2FF59" />
+                    android:textColor="#00FFFF" />
 
                 <EditText
                     android:id="@+id/editTextTextPersonName"
@@ -70,7 +69,7 @@
                     android:gravity="center"
                     android:hint="Enter Name"
                     android:inputType="textPersonName"
-                    android:textColor="#302424" />
+                    android:textColor="#00FFFF" />
 
                 <EditText
                     android:id="@+id/editTextTextEmailAddress"
@@ -83,7 +82,7 @@
                     android:gravity="center"
                     android:hint="name@example.com"
                     android:inputType="textEmailAddress"
-                    android:textColor="#302424" />
+                    android:textColor="#00FFFF" />
 
                 <EditText
                     android:id="@+id/editTextPhone"
@@ -96,7 +95,7 @@
                     android:gravity="center"
                     android:hint="Enter Phone No."
                     android:inputType="phone"
-                    android:textColor="#302424" />
+                    android:textColor="#00FFFF" />
 
                 <EditText
                     android:id="@+id/editTextNumberPassword"
@@ -109,7 +108,7 @@
                     android:gravity="center"
                     android:hint="Enter Password"
                     android:inputType="numberPassword"
-                    android:textColor="#302424" />
+                    android:textColor="#00FFFF" />
 
                 <Button
                     android:id="@+id/button"
@@ -117,7 +116,7 @@
                     android:layout_height="52dp"
                     android:layout_gravity="center|center_vertical"
                     android:layout_marginTop="42dp"
-                    android:backgroundTint="#FFAB40"
+                    android:backgroundTint="#988875"
                     android:text="Register" />
 
                 <TextView
@@ -127,7 +126,7 @@
                     android:layout_gravity="center|center_vertical"
                     android:layout_marginTop="19dp"
                     android:text="---------------OR----------------"
-                    android:textColor="#141015"
+                    android:textColor="#8B888C"
                     android:textStyle="bold" />
 
                 <LinearLayout
@@ -193,13 +192,12 @@
                     android:layout_gravity="center|center_vertical"
                     android:layout_marginTop="32dp"
                     android:text="Already Registered? Login"
-                    android:textColor="#E6271D1A"
+                    android:textColor="#72D103"
                     android:textStyle="bold" />
             </LinearLayout>
 
-        </ScrollView>
-    </LinearLayout>
 
-
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,12 +12,14 @@ public class splashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-
+        getWindow().setFlags(
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         Thread td=new Thread(){
             @Override
             public void run() {
                 try {
-                    sleep(1500);
+                    sleep(1900);
                 }catch (Exception e){
                     e.printStackTrace();
                 }

@@ -2,7 +2,9 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/acme</item>
+        <item>@font/adamina</item>
         <item>@font/aldrich</item>
+        <item>@font/arizonia</item>
         <item>@font/khula_light</item>
     </array>
 </resources>
