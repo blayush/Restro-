@@ -39,38 +39,12 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0">
 
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/profile_image"
-                    android:layout_width="96dp"
-                    android:layout_height="96dp"
-                    android:layout_gravity="center|center_vertical"
-                    android:layout_marginTop="36dp"
-                    android:src="@drawable/profile"
-                    app:civ_border_color="#220A0A"
-                    app:civ_border_width="2dp"
-                    app:civ_circle_background_color="#AF1A1A" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|center_vertical"
-                    android:layout_marginTop="11dp"
-                    android:fontFamily="@font/aldrich"
-                    android:text="Upload Photo"
-                    android:textColor="#B2FF59" />
-
-                <EditText
-                    android:id="@+id/editTextTextPersonName"
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|center_vertical"
-                    android:layout_marginTop="30dp"
-                    android:ems="10"
-                    android:fontFamily="@font/acme"
-                    android:gravity="center"
-                    android:hint="Enter Name"
-                    android:inputType="textPersonName"
-                    android:textColor="#302424" />
+                <ImageView
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/shiva3" />
 
                 <EditText
                     android:id="@+id/editTextTextEmailAddress"
@@ -81,21 +55,8 @@
                     android:ems="10"
                     android:fontFamily="@font/acme"
                     android:gravity="center"
-                    android:hint="name@example.com"
+                    android:hint="Enter Email"
                     android:inputType="textEmailAddress"
-                    android:textColor="#302424" />
-
-                <EditText
-                    android:id="@+id/editTextPhone"
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|center_vertical"
-                    android:layout_marginTop="30dp"
-                    android:ems="10"
-                    android:fontFamily="@font/acme"
-                    android:gravity="center"
-                    android:hint="Enter Phone No."
-                    android:inputType="phone"
                     android:textColor="#302424" />
 
                 <EditText
@@ -117,24 +78,37 @@
                     android:layout_height="52dp"
                     android:layout_gravity="center|center_vertical"
                     android:layout_marginTop="42dp"
-                    android:backgroundTint="#FFAB40"
-                    android:text="Register" />
+                    android:backgroundTint="#FF6E40"
+                    android:fontFamily="monospace"
+                    android:text="Login"
+                    android:textColor="#8C1E1E"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="176dp"
                     android:layout_height="16dp"
                     android:layout_gravity="center|center_vertical"
-                    android:layout_marginTop="19dp"
+                    android:layout_marginTop="29dp"
                     android:text="---------------OR----------------"
                     android:textColor="#141015"
                     android:textStyle="bold" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="22dp"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="Sign-in with"
+                    android:textSize="24sp" />
+
                 <LinearLayout
                     android:layout_width="318dp"
-                    android:layout_height="38dp"
+                    android:layout_height="41dp"
                     android:layout_gravity="center|center_vertical"
-                    android:layout_marginTop="29dp"
+                    android:layout_marginTop="25dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -186,15 +160,6 @@
 
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/alreadyRegTextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center|center_vertical"
-                    android:layout_marginTop="32dp"
-                    android:text="Already Registered? Login"
-                    android:textColor="#E6271D1A"
-                    android:textStyle="bold" />
             </LinearLayout>
 
         </ScrollView>
