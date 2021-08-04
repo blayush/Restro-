@@ -58,7 +58,7 @@
                     android:gravity="center"
                     android:hint="Enter Email"
                     android:inputType="textEmailAddress"
-                    android:textColor="#DCD4D4"
+                    android:textColor="#F8F5F5"
                     android:textColorHint="#F6F0F0" />
 
                 <EditText
@@ -74,7 +74,7 @@
                     android:gravity="center"
                     android:hint="Enter Password"
                     android:inputType="numberPassword"
-                    android:textColor="#EFBCBC"
+                    android:textColor="#F4F2F2"
                     android:textColorHint="#EFD8D8" />
 
                 <Button
