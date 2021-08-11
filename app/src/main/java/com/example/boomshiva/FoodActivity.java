@@ -23,7 +23,6 @@ public class FoodActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food);
-        //recyclerView=findViewById(R.id.recylerview);
         getWindow().setFlags(
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
@@ -33,6 +32,9 @@ public class FoodActivity extends AppCompatActivity {
         list.add(new MainModel(R.drawable.handipaneer,"Handi Paneer","139","Delicious and creamy gravy cooked in a handi. A Handi is an Indian Style Pot"));
         list.add(new MainModel(R.drawable.shahipaneer,"Shahi Paneer","149"," Fresh, unmelting cheese is married with a creamy gravy. “Shahi” means “royalty,” and I can promise this dish is fit for a King!"));
         list.add(new MainModel(R.drawable.paneerroll,"Paneer Roll","79","The tongue tickling spicy masala of grated paneer wrapped in paratha is a treat to taste buds at anytime anywhere"));
+        list.add(new MainModel(R.drawable.vegroll,"Veg Roll","39","Delicious veggie wrapped parantha with spicy addons , must have Fast Food"));
+        list.add(new MainModel(R.drawable.malaikofta,"Malai Kofta","189","Delicious dish of fried balls of potato and paneer in a rich and creamy mild gravy made with sweet onions and tomatoes"));
+
 
         FoodAdapter adapter=new FoodAdapter(list,this);
         binding.recylerview.setAdapter(adapter);

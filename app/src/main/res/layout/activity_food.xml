@@ -7,11 +7,24 @@
     android:orientation="vertical"
     tools:context=".FoodActivity">
 
+    <TextView
+        android:id="@+id/menuTextView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/gradientformenubar"
+        android:fontFamily="@font/amita"
+        android:gravity="center_horizontal|top"
+        android:text="Menu by Shiva"
+        android:textColor="#FFFFFF"
+        android:textSize="33sp" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recylerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="5dp"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp" />
 </LinearLayout>
