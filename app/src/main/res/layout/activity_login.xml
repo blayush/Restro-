@@ -74,7 +74,7 @@
                     android:gravity="center"
                     android:hint="Enter Password"
                     android:inputType="numberPassword"
-                    android:textColor="#F4F2F2"
+                    android:textColor="#F3EFEF"
                     android:textColorHint="#EFD8D8" />
 
                 <Button

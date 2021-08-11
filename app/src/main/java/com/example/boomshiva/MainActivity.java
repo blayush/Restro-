@@ -9,8 +9,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    TextView skiptextView;
     public void gotoRegisterFun(View view){
         Intent intent=new Intent(MainActivity.this,SignupActivity.class);
         startActivity(intent);
@@ -26,5 +28,13 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        skiptextView=findViewById(R.id.skiptextView);
+        skiptextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,FoodActivity.class);
+                startActivity(intent);
+            }
+        });
     }
     }
