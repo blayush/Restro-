@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".FoodActivity">
+    tools:context=".FoodActivity"
+
+    >
 
     <TextView
         android:id="@+id/menuTextView"
@@ -18,7 +20,7 @@
         android:gravity="center_horizontal|top"
         android:text="Menu by Shiva"
         android:textColor="#FFFFFF"
-        android:textSize="33sp" />
+        android:textSize="31sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recylerview"
@@ -26,5 +28,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="5dp"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp" />
+        tools:layout_editor_absoluteY="1dp"
+        tools:listitem="@layout/sample_mainfood"
+        />
 </LinearLayout>
