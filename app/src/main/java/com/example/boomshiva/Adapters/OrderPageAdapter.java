@@ -27,18 +27,24 @@ public class OrderPageAdapter extends RecyclerView.Adapter<OrderPageAdapter.view
     @NonNull
     @Override
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-       View view= LayoutInflater.from(context).inflate((R.layout))
-        return null;
+       View view= LayoutInflater.from(context).inflate(R.layout.sample_orderlist,parent,false);
+
+       return new viewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull OrderPageAdapter.viewHolder holder, int position) {
+        final OrderPageModel model=list.get(position);
+        holder.orderImg.setImageResource(model.getOrderImg());
+        holder.price.setText(model.getPrice());
+        holder.orderItemName.setText(model.getOrderItemName());
+        holder.orderNumber.setText(model.getOrderNumber());
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return list.size();
     }
 
     public class viewHolder extends RecyclerView.ViewHolder{
