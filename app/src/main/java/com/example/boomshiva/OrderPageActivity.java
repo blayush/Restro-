@@ -1,9 +1,11 @@
 package com.example.boomshiva;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.os.Bundle;
 
+import com.example.boomshiva.Adapters.OrderPageAdapter;
 import com.example.boomshiva.Models.OrderPageModel;
 import com.example.boomshiva.databinding.ActivityOrderPageBinding;
 
@@ -26,7 +28,10 @@ public class OrderPageActivity extends AppCompatActivity {
         list.add(new OrderPageModel((R.drawable.malaikofta),"Malai Kofta","189","303"));
         list.add(new OrderPageModel((R.drawable.vegroll),"Veg Roll","39","305"));
         list.add(new OrderPageModel((R.drawable.shahipaneer),"Shahi Paneer","159","302"));
-
+        OrderPageAdapter adapter=new OrderPageAdapter(list,this);
+        binding.orderRecyclerView.setAdapter(adapter);
+        LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
+        binding.orderRecyclerView.setLayoutManager(linearLayoutManager);
 
     }
 }
