@@ -65,7 +65,7 @@
                         android:layout_marginTop="2.6dp"
                         android:fontFamily="@font/amarante"
                         android:text="Order No."
-                        android:textColor="#CA9292"
+                        android:textColor="#FADADA"
                         android:textSize="15sp" />
 
                     <TextView
