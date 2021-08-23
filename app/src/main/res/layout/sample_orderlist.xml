@@ -34,7 +34,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
-                android:background="@drawable/orderlistgradientbg"
+                android:background="@drawable/gradientnew"
                 android:orientation="vertical"
                 android:paddingLeft="15dp">
 
