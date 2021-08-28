@@ -1,7 +1,10 @@
 package com.example.boomshiva;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -31,9 +34,19 @@ public class SignupActivity extends AppCompatActivity {
 //                        .crop()	    			//Crop image(Optional), Check Customization for more option
 //                        .compress(1024)			//Final image size will be less than 1 MB(Optional)
 //                        .maxResultSize(1080, 1080)	//Final image resolution will be less than 1080 x 1080(Optional)
+                       // .galleryOnly()
+                        .crop()
+
                         .start();
             }
         });
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Uri uri=data.getData();
+        uploadImage.setImageURI(uri);
     }
 }
