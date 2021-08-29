@@ -11,7 +11,12 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivity extends AppCompatActivity {
+    FirebaseDatabase database;
+    DatabaseReference myRef;
     TextView skiptextView;
     public void gotoRegisterFun(View view){
         Intent intent=new Intent(MainActivity.this,SignupActivity.class);
@@ -29,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         skiptextView=findViewById(R.id.skiptextView);
+         database = FirebaseDatabase.getInstance("https://boomshiva-9a7eb-default-rtdb.firebaseio.com/");
+        myRef = database.getReference("message");
+
+        myRef.setValue("Hello, World!");
+        myRef.setValue("Hello, Firebase!");
         skiptextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

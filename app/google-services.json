@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "243208568349",
+    "project_id": "boomshiva-9a7eb",
+    "storage_bucket": "boomshiva-9a7eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243208568349:android:a8fe51da34e120184ed0f4",
+        "android_client_info": {
+          "package_name": "com.example.boomshiva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243208568349-9dmk5t5vjpuhg93acj7kalr9t9u6cdu7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLCH48XUUzklXUn3Dl2xmvvNQ8rs70ff0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243208568349-9dmk5t5vjpuhg93acj7kalr9t9u6cdu7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
