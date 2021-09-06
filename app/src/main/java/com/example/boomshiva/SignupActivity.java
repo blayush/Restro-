@@ -11,19 +11,24 @@ import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.github.dhaval2404.imagepicker.ImagePicker;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class SignupActivity extends AppCompatActivity {
     TextView uploadTextButton;
     CircleImageView uploadImage;
+    private FirebaseAuth mAuth;
+    FirebaseDatabase database;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+        mAuth = FirebaseAuth.getInstance();
         uploadTextButton =findViewById(R.id.uploadTextView);
         uploadImage=findViewById(R.id.profile_image);
-
+        database=FirebaseDatabase.getInstance();
         getWindow().setFlags(
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
