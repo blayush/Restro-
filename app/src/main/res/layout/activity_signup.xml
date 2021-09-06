@@ -112,12 +112,12 @@
                     android:textColor="#00FFFF" />
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/registerButton"
                     android:layout_width="175dp"
                     android:layout_height="52dp"
                     android:layout_gravity="center|center_vertical"
                     android:layout_marginTop="42dp"
-                    android:backgroundTint="#988875"
+                    android:backgroundTint="#C18D4E"
                     android:text="Register" />
 
                 <TextView

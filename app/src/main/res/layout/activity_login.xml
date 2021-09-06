@@ -78,7 +78,7 @@
                     android:textColorHint="#EFD8D8" />
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/registerButton"
                     android:layout_width="175dp"
                     android:layout_height="52dp"
                     android:layout_gravity="center|center_vertical"

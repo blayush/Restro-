@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.github.dhaval2404.imagepicker.ImagePicker;
@@ -21,10 +22,12 @@ public class SignupActivity extends AppCompatActivity {
     CircleImageView uploadImage;
     private FirebaseAuth mAuth;
     FirebaseDatabase database;
+    Button registerButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+        registerButton=findViewById(R.id.registerButton);
         mAuth = FirebaseAuth.getInstance();
         uploadTextButton =findViewById(R.id.uploadTextView);
         uploadImage=findViewById(R.id.profile_image);
@@ -45,7 +48,7 @@ public class SignupActivity extends AppCompatActivity {
                         .start();
             }
         });
-
+        register
     }
 
     @Override
