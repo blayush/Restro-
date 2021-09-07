@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         skiptextView=findViewById(R.id.skiptextView);
-         database = FirebaseDatabase.getInstance("https://boomshiva-9a7eb-default-rtdb.firebaseio.com/");
+        database = FirebaseDatabase.getInstance("https://boomshiva-9a7eb-default-rtdb.firebaseio.com/");
         myRef = database.getReference("message");
 
         myRef.setValue("Hello, World!");

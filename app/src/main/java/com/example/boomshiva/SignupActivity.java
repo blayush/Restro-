@@ -49,7 +49,7 @@ public class SignupActivity extends AppCompatActivity {
         progressDialog.setTitle("Registering you..");
         progressDialog.setMessage("Wait till registration finishes!");
         uploadImage=findViewById(R.id.profile_image);
-        database=FirebaseDatabase.getInstance();
+        database = FirebaseDatabase.getInstance("https://boomshiva-9a7eb-default-rtdb.firebaseio.com/");
         getWindow().setFlags(
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
