@@ -12,7 +12,6 @@
         android:layout_width="366dp"
         android:layout_height="350dp"
         android:layout_gravity="center"
-        android:layout_marginTop="2dp"
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
@@ -90,16 +89,19 @@
 
         <TextView
             android:id="@+id/descTextView"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
             android:layout_gravity="center"
             android:layout_marginLeft="13.4dp"
             android:layout_marginTop="9dp"
             android:layout_marginRight="11dp"
-            android:fontFamily="monospace"
+            android:background="?attr/colorControlActivated"
+            android:fontFamily="@font/amaranth"
             android:gravity="center"
+            android:padding="3dp"
             android:text="cool"
-            android:textSize="11sp" />
+            android:textColor="#191505"
+            android:textSize="12.5sp" />
 
         <EditText
             android:layout_width="270dp"
