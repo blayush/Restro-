@@ -22,7 +22,7 @@ public class OrderDetailsActivity extends AppCompatActivity {
         activityOrderDetailsBinding.foodName.setText(name);
         activityOrderDetailsBinding.price.setText("Rs. "+(String.format("%d",price)));
         activityOrderDetailsBinding.descTextView.setText(description);
-        bindin
+        activityOrderDetailsBinding
 
     }
 }

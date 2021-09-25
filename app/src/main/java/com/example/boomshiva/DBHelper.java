@@ -20,33 +20,34 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-    db.execSQL(
-            "create table orders "+
-                    "(id int primary key autoincrement," +
-                    "name text," +
-                    "phone text," +
-                    "price int," +
-                    "image int," +
-                    "description text," +
-                    "foodname text)"
-    );
+        db.execSQL(
+                "create table orders " +
+                        "(id int primary key autoincrement," +
+                        "name text," +
+                        "phone text," +
+                        "price int," +
+                        "image int," +
+                        "description text," +
+                        "foodname text)"
+        );
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-db.execSQL("DROP table if exist orders");
-onCreate(db);
+        db.execSQL("DROP table if exist orders");
+        onCreate(db);
     }
-    public boolean insertOrder(String name,String phone,int price,int image,String desc,String foodname){
-        SQLiteDatabase database=getReadableDatabase();
-        ContentValues values=new ContentValues();
-        values.put("name",name);
-        values.put("phone",phone);
-        values.put("price",price);
-        values.put("image",image);
-        values.put("description",desc);
-        values.put("foodname",foodname);
-        long id=database.insert("orders",null,values);
+
+    public boolean insertOrder(String name, String phone, int price, int image, String desc, String foodname) {
+        SQLiteDatabase database = getReadableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("name", name);
+        values.put("phone", phone);
+        values.put("price", price);
+        values.put("image", image);
+        values.put("description", desc);
+        values.put("foodname", foodname);
+        long id = database.insert("orders", null, values);
         return id > 0;
     }
 }
