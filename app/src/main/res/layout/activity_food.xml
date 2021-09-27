@@ -1,34 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#170F0F"
     android:orientation="vertical"
-    tools:context=".FoodActivity"
 
-    >
+    tools:context=".FoodActivity">
 
-    <TextView
-        android:id="@+id/menuTextView"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="37dp"
-        android:background="@drawable/gradientformenubar"
-        android:fontFamily="@font/amita"
-        android:gravity="center_horizontal|top"
-        android:text="Menu by Shiva"
-        android:textColor="#FFFFFF"
-        android:textSize="31sp" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recylerview"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="5dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:listitem="@layout/sample_mainfood"
-        />
-</LinearLayout>
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/menuTextView"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="37dp"
+            android:background="@drawable/gradientformenubar"
+            android:fontFamily="@font/amita"
+            android:gravity="center_horizontal|top"
+            android:text="Menu by Shiva"
+            android:textColor="#FFFFFF"
+            android:textSize="31sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            tools:listitem="@layout/sample_mainfood"
+
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton4"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="40dp"
+        android:clickable="true"
+        app:elevation="6.6dp"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/orders" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

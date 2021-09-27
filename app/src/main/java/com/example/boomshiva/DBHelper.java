@@ -22,13 +22,14 @@ public class DBHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(
                 "create table orders " +
-                        "(id int primary key autoincrement," +
+                        "(id integer primary key autoincrement," +
                         "name text," +
                         "phone text," +
                         "price int," +
                         "image int," +
                         "description text," +
-                        "foodname text)"
+                        "foodname text," +
+                        "quantity int)"
         );
     }
 
@@ -38,7 +39,7 @@ public class DBHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public boolean insertOrder(String name, String phone, int price, int image, String desc, String foodname) {
+    public boolean insertOrder(String name, String phone, int price, int image, String desc, String foodname,int quantity) {
         SQLiteDatabase database = getReadableDatabase();
         ContentValues values = new ContentValues();
         values.put("name", name);
@@ -47,6 +48,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put("image", image);
         values.put("description", desc);
         values.put("foodname", foodname);
+        values.put("quantity",quantity);
         long id = database.insert("orders", null, values);
         return id > 0;
     }
