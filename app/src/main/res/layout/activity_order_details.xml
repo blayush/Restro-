@@ -4,31 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/order_list_bg"
     android:orientation="vertical"
     tools:context=".OrderDetailsActivity">
 
 
     <LinearLayout
-        android:layout_width="366dp"
-        android:layout_height="350dp"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
         android:layout_gravity="center"
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/gradientnew"
             app:cardCornerRadius="7dp"
             app:cardElevation="6dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/cssgradient1"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/foodImage"
                     android:layout_width="wrap_content"
                     android:layout_height="250dp"
+                    android:layout_gravity="center"
                     android:scaleType="centerCrop"
                     app:srcCompat="@drawable/handipaneer" />
 
@@ -40,6 +47,7 @@
                     android:fontFamily="@font/berkshire_swash"
                     android:gravity="center"
                     android:text="Handi Paneer"
+                    android:textColor="#171515"
                     android:textSize="24.5sp" />
 
                 <LinearLayout
@@ -50,13 +58,13 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/imageButton"
+                        android:id="@+id/addButton"
                         android:layout_width="100dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:backgroundTint="#00FFFFFF"
-                        android:scaleType="centerCrop"
-                        app:srcCompat="@drawable/addbutton"
+                        android:scaleType="center"
+                        app:srcCompat="@android:drawable/ic_input_add"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
@@ -67,16 +75,17 @@
                         android:fontFamily="@font/adamina"
                         android:gravity="center"
                         android:text="1"
-                        android:textSize="25sp"
+                        android:textColor="#433636"
+                        android:textSize="22sp"
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:id="@+id/imageView2"
+                        android:id="@+id/subButton"
                         android:layout_width="100dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:scaleType="centerCrop"
-                        app:srcCompat="@drawable/subtract_button" />
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@android:drawable/presence_busy" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -89,13 +98,12 @@
 
         <TextView
             android:id="@+id/descTextView"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="13.4dp"
             android:layout_marginTop="9dp"
             android:layout_marginRight="11dp"
-            android:background="@color/white"
             android:fontFamily="@font/amaranth"
             android:gravity="center"
             android:padding="3dp"
@@ -112,6 +120,7 @@
             android:ems="10"
             android:hint="Name"
             android:inputType="textPersonName"
+            android:textColor="#000000"
             android:textColorHint="#514343" />
 
         <EditText
@@ -122,7 +131,8 @@
             android:ems="10"
             android:hint="Phone"
             android:inputType="phone"
-            android:textColorHint="#605151" />
+            android:textColor="#000000"
+            android:textColorHint="#221D1D" />
 
         <TextView
             android:id="@+id/priceTextView"
@@ -133,7 +143,7 @@
             android:fontFamily="@font/abril_fatface"
             android:gravity="center"
             android:text="Price"
-            android:textColor="#FF6E40"
+            android:textColor="#E64C1B"
             android:textSize="25sp"
             android:textStyle="bold" />
 

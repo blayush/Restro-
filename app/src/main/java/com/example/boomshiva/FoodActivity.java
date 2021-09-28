@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 
@@ -13,12 +15,14 @@ import com.example.boomshiva.Adapters.FoodAdapter;
 import com.example.boomshiva.Models.MainModel;
 import com.example.boomshiva.databinding.ActivityFoodBinding;
 import com.example.boomshiva.databinding.ActivityMainBinding;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
 public class FoodActivity extends AppCompatActivity {
     ActivityFoodBinding binding;
     //RecyclerView recyclerView;
+//    FloatingActionButton floatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +45,13 @@ public class FoodActivity extends AppCompatActivity {
         binding.recylerview.setAdapter(adapter);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
         binding.recylerview.setLayoutManager(linearLayoutManager);
+        binding.floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(FoodActivity.this,OrderPageActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

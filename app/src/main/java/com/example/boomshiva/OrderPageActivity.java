@@ -19,15 +19,17 @@ public class OrderPageActivity extends AppCompatActivity {
         binding =ActivityOrderPageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        ArrayList<OrderPageModel>list=new ArrayList<>();
-        list.add(new OrderPageModel((R.drawable.paneerroll),"Paneer Roll","79 Rs.","301"));
-        list.add(new OrderPageModel((R.drawable.malaikofta),"Malai Kofta","189 Rs.","303"));
-        list.add(new OrderPageModel((R.drawable.vegroll),"Veg Roll","39 Rs.","305"));
-        list.add(new OrderPageModel((R.drawable.shahipaneer),"Shahi Paneer","159 Rs.","302"));
-        list.add(new OrderPageModel((R.drawable.paneerroll),"Paneer Roll","79 Rs.","301"));
-        list.add(new OrderPageModel((R.drawable.malaikofta),"Malai Kofta","189 Rs.","303"));
-        list.add(new OrderPageModel((R.drawable.vegroll),"Veg Roll","39 Rs.","305"));
-        list.add(new OrderPageModel((R.drawable.shahipaneer),"Shahi Paneer","159 Rs.","302"));
+
+        DBHelper helper=new DBHelper(this);
+        ArrayList<OrderPageModel>list= helper.getOrders();
+//        list.add(new OrderPageModel((R.drawable.paneerroll),"Paneer Roll","79 Rs.","301"));
+//        list.add(new OrderPageModel((R.drawable.malaikofta),"Malai Kofta","189 Rs.","303"));
+//        list.add(new OrderPageModel((R.drawable.vegroll),"Veg Roll","39 Rs.","305"));
+//        list.add(new OrderPageModel((R.drawable.shahipaneer),"Shahi Paneer","159 Rs.","302"));
+//        list.add(new OrderPageModel((R.drawable.paneerroll),"Paneer Roll","79 Rs.","301"));
+//        list.add(new OrderPageModel((R.drawable.malaikofta),"Malai Kofta","189 Rs.","303"));
+//        list.add(new OrderPageModel((R.drawable.vegroll),"Veg Roll","39 Rs.","305"));
+//        list.add(new OrderPageModel((R.drawable.shahipaneer),"Shahi Paneer","159 Rs.","302"));
         OrderPageAdapter adapter=new OrderPageAdapter(list,this);
         binding.orderRecyclerView.setAdapter(adapter);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);

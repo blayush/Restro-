@@ -2,12 +2,17 @@ package com.example.boomshiva;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
+import com.example.boomshiva.Models.OrderPageModel;
+
+import java.util.ArrayList;
 
 public class DBHelper extends SQLiteOpenHelper {
     final static String DBNAME = "mydatabase.db";
@@ -51,5 +56,23 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put("quantity",quantity);
         long id = database.insert("orders", null, values);
         return id > 0;
+    }
+    public ArrayList<OrderPageModel>getOrders(){
+        ArrayList<OrderPageModel>orders=new ArrayList<>();
+        SQLiteDatabase database=this.getWritableDatabase();
+        Cursor cursor= database.rawQuery("Select id,foodname,image,price from orders",null);
+        if(cursor.moveToFirst()){
+            while(cursor.moveToNext()){
+                OrderPageModel model=new OrderPageModel();
+                model.setOrderImg(cursor.getInt(2));
+                model.setOrderItemName(cursor.getString(1));
+                model.setPrice(cursor.getInt(3)+"");
+                model.setOrderNumber(cursor.getInt(0)+"");
+                orders.add(model);
+            }
+        }
+        cursor.close();
+        database.close();
+        return orders;
     }
 }

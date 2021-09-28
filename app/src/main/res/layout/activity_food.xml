@@ -12,6 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/cssgradient2"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,13 +44,15 @@
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton4"
+        android:id="@+id/floatingActionButton"
         android:layout_width="108dp"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
 
         android:layout_marginRight="30dp"
         android:layout_marginBottom="40dp"
+        android:background="#E43333"
+        android:backgroundTint="#ECA152"
         android:clickable="true"
         app:elevation="6.6dp"
         app:fabSize="normal"

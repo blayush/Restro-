@@ -11,6 +11,9 @@ public class OrderPageModel {
         this.orderNumber = orderNumber;
     }
 
+    public OrderPageModel() {
+    }
+
     public int getOrderImg() {
         return orderImg;
     }

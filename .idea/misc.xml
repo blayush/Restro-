@@ -4,11 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/91930/AndroidStudioProjects/BoomShiva/app/src/main/res/drawable/buttongradient.xml" value="0.24027777777777778" />
+        <entry key="..\:/Users/91930/AndroidStudioProjects/BoomShiva/app/src/main/res/drawable/cssgradient1.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/91930/AndroidStudioProjects/BoomShiva/app/src/main/res/drawable/cssgradient2.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/91930/AndroidStudioProjects/BoomShiva/app/src/main/res/drawable/order_list_bg.xml" value="0.236986301369863" />
         <entry key="..\:/Users/91930/AndroidStudioProjects/BoomShiva/app/src/main/res/layout/activity_food.xml" value="0.264" />
         <entry key="..\:/Users/91930/AndroidStudioProjects/BoomShiva/app/src/main/res/layout/activity_login.xml" value="0.264" />
-        <entry key="..\:/Users/91930/AndroidStudioProjects/BoomShiva/app/src/main/res/layout/activity_order_details.xml" value="0.4" />
+        <entry key="..\:/Users/91930/AndroidStudioProjects/BoomShiva/app/src/main/res/layout/activity_order_details.xml" value="0.264" />
         <entry key="..\:/Users/91930/AndroidStudioProjects/BoomShiva/app/src/main/res/layout/activity_order_page.xml" value="0.264" />
         <entry key="..\:/Users/91930/AndroidStudioProjects/BoomShiva/app/src/main/res/layout/activity_signup.xml" value="0.264" />
+        <entry key="..\:/Users/91930/AndroidStudioProjects/BoomShiva/app/src/main/res/layout/sample_mainfood.xml" value="0.22592592592592592" />
       </map>
     </option>
   </component>
